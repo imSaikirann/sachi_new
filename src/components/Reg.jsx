@@ -126,7 +126,7 @@ const Reg = () => {
       borderWidth="1px"
       borderRadius="1.2rem"
       mt="4"
-      boxShadow="md"
+    
     >
       <Heading mb="4" textAlign="center">
         Competition Registration

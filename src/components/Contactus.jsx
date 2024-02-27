@@ -1,5 +1,5 @@
-import { Box, Flex, Text, Heading } from "@chakra-ui/react";
-import ButtonD from "./Button";
+import { Box, Flex, Text, } from "@chakra-ui/react";
+
 import Map from "./Map";
 export default function Contactus() {
   return (
@@ -10,7 +10,7 @@ export default function Contactus() {
         backgroundImage="contactus.png"
         backgroundSize="cover"
         backgroundPosition="center"
-        color="white"
+        color="white" 
         overflowX="hidden"
       >
         <Flex

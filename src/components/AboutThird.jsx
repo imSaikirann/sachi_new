@@ -1,8 +1,8 @@
 import {
     Box,
-    Circle,
+ 
     Flex,
-    Heading,
+
     Text,
     useMediaQuery,
   } from "@chakra-ui/react";

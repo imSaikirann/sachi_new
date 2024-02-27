@@ -114,7 +114,7 @@ const Reg = () => {
     direction="column"
     align="center"
     justify="center"
-    minHeight="100vh"
+   
     bgGradient="linear(to-b, purple.600 0%, purple.400 15%, purple.300 20%, white 55%)"
   
 

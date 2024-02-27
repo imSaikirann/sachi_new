@@ -125,7 +125,7 @@ const Reg = () => {
       p="4"
       borderWidth="1px"
       borderRadius="1.2rem"
-      mt="4"
+      
     
     >
       <Heading mb="4" textAlign="center">

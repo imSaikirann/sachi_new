@@ -11,7 +11,7 @@ import {
 export default function Map() {
   return (
     <Flex direction="column">
-      <Box w="100vw" h={["100vh", "1500px"]} bg="white" overflowX="hidden">
+      <Box w="100vw" h={["100vh", "1250px"]} bg="white" overflowX="hidden">
         <Flex
           flexDirection="column"
           ml="240px"
@@ -89,7 +89,7 @@ export default function Map() {
               </VStack>
 
               <Box>
-                <Image src="location.png" h="803px" w="990x" />
+                <Image src="location.png" />
               </Box>
             </HStack>
           </Box>

@@ -17,7 +17,7 @@ export default function AboutSec() {
           <Flex>
             <Box>
               <VStack>
-                <VStack alignItems="flex-start" w="655px">
+                <VStack alignItems="flex-start" w="655px" >
                   <Text fontFamily="Oswald" fontSize="32px" fontWeight="500">
                     About Sachi Events
                   </Text>
@@ -25,7 +25,7 @@ export default function AboutSec() {
                   Turn your dream events into a reality with Sachi. Whether you envision an indoor or outdoor celebration, we bring your vision to life, allowing you to relax and savour the occasion.
                   </Text>
                 </VStack>
-                <VStack alignItems="flex-start" w="655px" mt="1.4rem">
+                <VStack alignItems="flex-start" w="655px" mt="1.4rem"> 
                   <Text fontFamily="Oswald" fontSize="32px" fontWeight="500">
                   Our Vission :
                   </Text>
@@ -41,7 +41,7 @@ export default function AboutSec() {
           </Flex>
 
           <Flex>
-          <Box h="462px" w="665px">
+          <Box >
               <Image src="rocket.png" />
             </Box>
             <Box>

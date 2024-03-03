@@ -2,6 +2,7 @@ import {
   Box,
   Flex,
   Text,
+  
 
   Image,
   HStack,
@@ -10,77 +11,80 @@ import {
 
 export default function Map() {
   return (
-    <Flex direction="column">
-      <Box w="100vw" h={["100vh", "1250px"]} bg="white" overflowX="hidden">
+ 
+      <Box w="100vw" h={["1000px", "1250px"]} bg="white" overflowX="hidden">
         <Flex
-          flexDirection="column"
-          ml="240px"
+          flexDirection={["column","column"]}
+          ml={["14px","240px"]}
+          mr={["14px","240px"]}
+          
          
         >
-          <Box mt="4rem">
-            <Image src="map.png" h="570px" w="1170px" />
+          <Box mt={["1rem","4rem"]}>
+            <Image src="map.png" h={["200px","570px"]} w={["600px","1170px"]} />
           </Box>
-          <Box>
-            <HStack >
-              <VStack alignItems="flex-start">
-                <HStack mb="4rem">
-                  <Box mb="4rem" mr="3rem">
-                    <Text fontFamily="Oswald" fontSize="18px" fontWeight="600">
+          <Box fontSize={["12px","18px"]} display="flex" flexDirection={["column","row"]} mt="2rem">
+        
+             <Box>
+             <VStack alignItems="flex-start" mb={["-1rem","4rem"]}>
+                <HStack mb={["1rem","4rem"]}  >
+                  <Box mb={["4rem","4rem"]} mr="3rem">
+                    <Text fontFamily="Oswald"  fontWeight="600">
                       Address
                     </Text>
                   </Box>
 
                   <Box w="356px" h="96.8px">
-                    <Text fontFamily="Oswald" fontSize="18px" fontWeight="600">
+                    <Text fontFamily="Oswald"  fontWeight="600">
                       Wings convention centre
                     </Text>
-                    <Text fontFamily="Oswald" fontSize="18px">
+                    <Text fontFamily="Oswald" >
                       St.George’s school, New Bupathy Nagar, Shenoy Nagar,{" "}
                     </Text>
-                    <Text fontFamily="Oswald" fontSize="18px">
+                    <Text fontFamily="Oswald" >
                       Ponnamalli high road, opp pachayapa college, Chennai,{" "}
                     </Text>
-                    <Text fontFamily="Oswald" fontSize="18px">
+                    <Text fontFamily="Oswald" >
                       Tamil Nadu 600030{" "}
                     </Text>
                   </Box>
                 </HStack>
-                <HStack alignItems="flex-start" mb="4rem">
+                <HStack alignItems="flex-start" mb={["1rem","4rem"]}>
                   <Box mr="2rem">
-                    <Text fontFamily="Oswald" fontSize="18px" fontWeight="600">
+                    <Text fontFamily="Oswald"  fontWeight="600">
                       Telephone
                     </Text>
                   </Box>
 
                   <Box w="356px">
-                    <Text fontFamily="Oswald" fontSize="18px">
+                    <Text fontFamily="Oswald" >
                       +91 79049 24560
                     </Text>
                   </Box>
                 </HStack>
                 <HStack alignItems="flex-start">
-                  <Box mr="2rem"  mb="4rem">
-                    <Text fontFamily="Oswald" fontSize="18px" fontWeight="600">
-                      E-mail
+                  <Box mr={["1rem","2rem"]}  mb={["1rem","4rem"]}>
+                    <Text fontFamily="Oswald"  fontWeight="600">
+                      Email
                     </Text>
                   </Box>
 
                   <Box w="356px" pl="1.5rem">
-                    <Text fontFamily="Oswald" fontSize="18px">
+                    <Text fontFamily="Oswald" >
                       sachieventsmarketing@gmail.com
                     </Text>
                   </Box>
                 </HStack>
                 <HStack alignItems="flex-start">
                   <Box>
-                    <Text fontFamily="Oswald" fontSize="18px" fontWeight="600">
+                    <Text fontFamily="Oswald"  fontWeight="600">
                       Official Site
                     </Text>
                   </Box>
 
                   <Box w="356px">
                     <a href="https://sachievents.com/">
-                      <Text fontFamily="Oswald" fontSize="18px" pl="1.4rem">
+                      <Text fontFamily="Oswald"  pl="1.4rem">
                         www.sachievents.com
                       </Text>
                     </a>
@@ -88,13 +92,17 @@ export default function Map() {
                 </HStack>
               </VStack>
 
+             </Box>
+
               <Box>
                 <Image src="location.png" />
               </Box>
-            </HStack>
+            
+   
+            
           </Box>
         </Flex>
       </Box>
-    </Flex>
+  
   );
 }

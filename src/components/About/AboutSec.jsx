@@ -66,10 +66,10 @@ export default function AboutSec() {
               <VStack>
                 <VStack alignItems="flex-start" w="655px" mt="10rem">
                   <Text fontFamily="Oswald" fontSize="32px" fontWeight="500">
-                  Our Mission: 
+                  Our Way: 
                   </Text>
                   <Text fontFamily="Oswald" fontSize="26px" >
-                  To foster positive change in society through exceptional events.
+                  Experiences Designed for Today's Clientele.
                   </Text>
                 </VStack>
               

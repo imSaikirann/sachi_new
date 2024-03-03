@@ -32,11 +32,14 @@ export default function Navbar() {
       bg="transparent"
       borderBottom="1px solid white"
       position="absolute"
-      overflow="hidden"
+      fontFamily="Oswald"
+     
     >
-      <Link to="/">
-        <Image src="logo.png" w={["90px"]} mr={["20px"]} />
-      </Link>
+      <a href="https://sachievents.com/">
+      <Image src="logo.png" w={["90px"]} mr={["20px"]} />
+
+      </a>
+     
 
       {isLargerThan800 ? (
         <>
@@ -99,6 +102,18 @@ export default function Navbar() {
             <Flex
               alignItems="center"
               h="100%"
+              borderBottom={pathname === "/spon" && "2px solid #D69E2E"}
+              fontWeight="500"
+            >
+              <Link to="/spon">
+                <Text color={pathname === "/spon" && "yellow.500"}>
+                  Sponsors
+                </Text>
+              </Link>
+            </Flex>
+            <Flex
+              alignItems="center"
+              h="100%"
               borderBottom={pathname === "/contactUs" && "2px solid #D69E2E"}
               fontWeight="500"
             >
@@ -118,7 +133,7 @@ export default function Navbar() {
               justifyContent="center"
             >
               <Box fontSize="15px">For booking up the stalls Contact</Box>
-              <Box fontSize="20px">+91 90329 44441</Box>
+              <Box fontSize="20px">+91 7904924560</Box>
             </Flex>
             <Box bg="yellow.500" h="90px" w="90px" fontSize="35px" p="6">
               <FiPhoneCall />
@@ -135,30 +150,35 @@ export default function Navbar() {
             icon={<RxHamburgerMenu />}
             variant="outline"
             color="white"
-            ml="200px"
+            ml="45vw"
           />
-          <MenuList>
-            <MenuItem>
+          <MenuList bg="transparent" backdropFilter="blur(8px)" color="white" >
+            <MenuItem bg="transparent" fontWeight="600">
               <Link to="/">
                 <Text>Home</Text>
               </Link>
             </MenuItem>
-            <MenuItem>
+            <MenuItem bg="transparent" fontWeight="600">
               <Link to="/about">
                 <Text>About Us</Text>
               </Link>
             </MenuItem>
-            <MenuItem>
+            <MenuItem bg="transparent" fontWeight="600">
               <Link to="/competition">
                 <Text>Competitions</Text>
               </Link>
             </MenuItem>
-            <MenuItem>
+            <MenuItem bg="transparent" fontWeight="600">
               <Link to="/register">
                 <Text>Registration</Text>
               </Link>
             </MenuItem>
-            <MenuItem>
+            <MenuItem bg="transparent" fontWeight="600">
+              <Link to="/spon">
+                <Text>Sponsors</Text>
+              </Link>
+            </MenuItem>
+            <MenuItem bg="transparent" fontWeight="600">
               <Link to="/contactUs">
                 <Text>Contact Us</Text>
               </Link>

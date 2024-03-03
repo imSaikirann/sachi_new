@@ -1,12 +1,21 @@
 import { Box, Flex, Text, Heading } from "@chakra-ui/react";
-import ButtonD from "./Button";
+import ButtonD from "../Button";
+import CompSec from './CompSec'
+import Compfourth from './CompFourth'
+import Compthird from './Compthird'
+
+
+
+
+
 export default function Ticket() {
   return (
-    <Flex direction="column">
+    <>
+  <Flex direction="column">
       <Box
         w="100vw"
         h={["82vh", "100vh"]}
-        backgroundImage="home_banner.png"
+        backgroundImage="comp_banner.png"
         backgroundSize="cover"
         backgroundPosition="center"
         color="white"
@@ -56,6 +65,12 @@ export default function Ticket() {
           </Box>
         </Flex>
       </Box>
+      <CompSec></CompSec>
+      <Compthird/>
+      <Compfourth/>
+     
     </Flex>
+  
+    </>
   );
 }

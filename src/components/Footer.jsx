@@ -1,19 +1,42 @@
-import { HStack, Box, Text, Image, VStack, Icon } from "@chakra-ui/react";
+import {
+  HStack,
+  Box,
+  Text,
+  Image,
+  VStack,
+  Icon,
+  Flex,
+  Stack,
+} from "@chakra-ui/react";
 import React from "react";
-import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaFacebook, } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <>
-      <HStack h="519px" w="100%" bg="#1B1F27">
-        <Box ml="240px" alignItems="flex-start" spacing={4} w="300px">
+      <Flex
+        alignItems={["left", "center"]}
+        direction={{ base: "column", md: "row" }}
+        h={["1100px", "519px"]}
+        w="100%"
+        bg="#1B1F27"
+        p={["20px", "0px"]}
+        gap={["3.5rem", "2rem"]}
+      >
+        <Box
+          ml={["0px", "240px"]}
+          alignItems="flex-start"
+          spacing={4}
+          w="300px"
+          mt="1rem"
+        >
           <VStack alignItems="left">
             <Image
               src="sachi_logo.png"
               alt="Your Image Alt Text"
-              w="103px"
-              h="137px"
+              w={["70px", "103px"]}
+              h={["85px", "137px"]}
               mb="10px"
             />
             <Box
@@ -37,59 +60,18 @@ export default function Footer() {
             </Box>
           </VStack>
         </Box>
-        <Box color="white" h="200px" w="200px" alignItems="left" mb="3.7rem">
-          <VStack alignItems="left">
-            <Text fontSize="18px" fontFamily="oswald" color="white" mb="18px">
-              About Us
-            </Text>
-            <VStack spacing={4} alignItems="left">
-              <Text fontSize="16px" fontFamily="oswald" color="white">
-                Our Vision
-              </Text>
-              <Text fontSize="16px" fontFamily="oswald" color="white">
-                Our Mission
-              </Text>
-              <Text fontSize="16px" fontFamily="oswald" color="white">
-                Our Way
-              </Text>
-            </VStack>
-          </VStack>
-        </Box>
 
-        <Box color="white" h="200px" w="200px" alignItems="left" mb="3.7rem">
+        <Box color="white" h={["200px", "200px"]} w="200px" alignItems="left">
           <VStack alignItems="left">
-            <Text fontSize="18px" fontFamily="oswald" color="white" mb="18px">
-              Competitions
-            </Text>
-            <VStack spacing={4} alignItems="flex-start">
-              <Text fontSize="16px" fontFamily="oswald" color="white">
-                Get Started Us
-              </Text>
-              <Text fontSize="16px" fontFamily="oswald" color="white">
-                Contact Us
-              </Text>
-              <Text fontSize="16px" fontFamily="oswald" color="white">
-                Needs Helps?
-              </Text>
-              <Text fontSize="16px" fontFamily="oswald" color="white">
-                Join With Us
-              </Text>
-              <Text fontSize="16px" fontFamily="oswald" color="white">
-                Ask Question
-              </Text>
-              <Text fontSize="16px" fontFamily="oswald" color="white">
-                Newsletters
-              </Text>
-            </VStack>
-          </VStack>
-        </Box>
-
-        <Box color="white" h="200px" w="200px" alignItems="left" mb="3.7rem">
-          <VStack alignItems="left">
-            <Text fontSize="18px" fontFamily="oswald" color="white" mb="18px">
+            <Text
+              fontSize="18px"
+              fontFamily="oswald"
+              color="white"
+              mb={["8px", "18px"]}
+            >
               Quick Links
             </Text>
-            <VStack spacing={4} alignItems="left">
+            <VStack spacing={["2", "4"]} alignItems="left">
               <Link to="/">
                 <Text fontSize="16px" fontFamily="oswald" color="white">
                   Home
@@ -119,89 +101,62 @@ export default function Footer() {
             </VStack>
           </VStack>
         </Box>
-
-        <Box
-          color="white"
-          h="200px"
-          w="200px"
-          alignItems="left"
-          mb="3.7rem"
-          mr="240px"
-        >
+        <Box color="white" h="200px" w="200px" alignItems="left" mr="240px">
           <VStack alignItems="left">
-            <Text fontSize="18px" fontFamily="oswald" color="white" mb="18px">
-              Instagram
+            <Text fontSize="18px" fontFamily="oswald" color="white">
+              Digital partner
             </Text>
+            <Box w="150px" h="100px" bg="white">
             <VStack spacing={4} alignItems="left" mb="10px">
-              <HStack spacing={2}>
+              <Stack spacing={2}>
                 <Image
-                  src="post1.png"
+                  src="d.png"
                   alt="Your Image Alt Text"
-                  w="83px"
-                  h="83px"
+                  w="100%"
+                  h="100%"
                 />
-                <Image
-                  src="post2.png"
-                  alt="Your Image Alt Text"
-                  w="83px"
-                  h="83px"
-                />
-                <Image
-                  src="post3.png"
-                  alt="Your Image Alt Text"
-                  w="83px"
-                  h="83px"
-                />
-              </HStack>
+              </Stack>
             </VStack>
-            <VStack spacing={4} alignItems="left">
-              <HStack spacing={2}>
-                <Image
-                  src="post1.png"
-                  alt="Your Image Alt Text"
-                  w="83px"
-                  h="83px"
-                />
-                <Image
-                  src="yello_post.png"
-                  alt="Your Image Alt Text"
-                  w="83px"
-                  h="83px"
-                />
-                <Image
-                  src="post3.png"
-                  alt="Your Image Alt Text"
-                  w="83px"
-                  h="83px"
-                />
-              </HStack>
-            </VStack>
-            <Box mt="3rem">
-              <HStack spacing="2">
-                <a href="https://instagram.com/sachi_events_28?igshid=MzMyNGUyNmU2YQ==">
-                  <Icon as={FaInstagram} boxSize="6" color="white" />
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61553202830750&mibextid=ZbWKwL">
-                  <Icon as={FaFacebook} boxSize="6" color="white" />
-                </a>
-                <Icon as={FaTwitter} boxSize="6" color="white" />
-                <Icon as={FaLinkedin} boxSize="6" color="white" />
-              </HStack>
             </Box>
           </VStack>
         </Box>
-      </HStack>
-
-      <HStack
-        spacing={2}
-        h="80px"
-        bg="#11161E"
-        justify="space-between"
-        align="center"
-        ml="240px"
-        mr="240px"
+        <Box color="white" h="200px" w="200px" alignItems="left" mr="240px">
+          <VStack alignItems="left">
+            <VStack spacing={4} alignItems="left" mb="10px">
+              <Stack spacing={2}>
+                <Image
+                  src="baz.jpeg"
+                  alt="Your Image Alt Text"
+                  w="100%"
+                  h="100%"
+                />
+              </Stack>
+            </VStack>
+            <HStack spacing={4} mt="1em">
+              <a href="https://instagram.com/sachi_events_28?igshid=MzMyNGUyNmU2YQ==">
+                <Icon as={FaInstagram} boxSize={6} color="white" />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61553202830750&mibextid=ZbWKwL">
+                <Icon as={FaFacebook} boxSize={6} color="white" />
+              </a>
+         
+            </HStack>
+          </VStack>
+        </Box>
+      </Flex>
+      <Box >
+      <Flex
+      ml={["", "240px"]} mr={["", "230px"]}
+        direction={{ base: "column", md: "row" }}
+        align={{ base: "center", md: "center" }}
+        justify={{ base: "space-between", md: "space-between" }}
+        h={{ base: "auto", md: "80px" }}
+        color="white"
+        fontFamily="oswald"
+        px={4}
+        py="5"
       >
-        <Box color="white" fontSize="14px" fontFamily="oswald">
+        <Box fontSize={{ base: "12px", md: "14px" }} mb={{ base: 4, md: 0 }}>
           Copyright by
           <Text as="span" color="#FFA800">
             {" "}
@@ -210,22 +165,19 @@ export default function Footer() {
           All Rights Reserved
         </Box>
         <HStack
-          color="white"
-          spacing={4}
-          justify="space-between"
-          align="center"
-          fontSize="14px"
+          spacing={{ base: 2, md: 4 }}
+          fontSize={{ base: "12px", md: "14px" }}
           fontFamily="oswald"
         >
           <Box>
-            {" "}
             <a href="/">Privacy</a>
           </Box>
           <Box>
             <a href="/">Terms & Conditions</a>
           </Box>
         </HStack>
-      </HStack>
+      </Flex>
+    </Box>
     </>
   );
 }
